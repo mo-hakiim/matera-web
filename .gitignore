@@ -1,0 +1,7 @@
+# Rendered reference previews are only for local design review.
+/assets/references/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
