@@ -50,11 +50,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', event => { if (event.key === 'Escape' && !lightbox.hidden) close(); });
   }
 
-  const revealTargets = document.querySelectorAll('.service-card, .industry-list span, .work-tile, .approach-steps article, .gallery-card');
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
-    }), { threshold: 0.08 });
-    revealTargets.forEach(target => { target.classList.add('js-reveal'); observer.observe(target); });
-  }
 });
