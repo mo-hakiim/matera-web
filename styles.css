@@ -111,3 +111,10 @@ html[data-theme="dark"] .contact-form input,html[data-theme="dark"] .contact-for
 html[data-theme="dark"] .contact-form label{color:var(--ink)}
 html[data-theme="dark"] .faq-list summary{color:var(--ink)}
 
+
+/* Final phone layout override: keep the copy and artwork in separate rows. */
+@media(max-width:620px){.hero{display:grid;grid-template-columns:minmax(0,1fr);align-items:start;gap:18px}.hero-copy,.hero-art{grid-column:1;min-width:0}.hero-copy{width:100%;padding:0}.hero h1{max-width:100%;font-size:clamp(38px,10.5vw,50px);overflow-wrap:normal}.hero-art{grid-row:auto;width:100%;min-height:285px;margin:5px 0 0}.hero-index{display:none}}
+/* Dark theme surfaces stay dark so yellow and blue remain the accents. */
+html[data-theme="dark"] .approach-cards article{background:#13151c;color:var(--ink);border-color:#334b81}
+html[data-theme="dark"] .hero-frame{border-color:var(--paper)}
+html[data-theme="dark"] .hero-float-card{background:var(--paper);color:var(--ink)}
