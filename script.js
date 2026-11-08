@@ -4,27 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
 
-  // Keep the dark/charcoal choice across pages and visits.
+  // Persist the selected light or dark palette across pages and visits.
   const themeButtons = document.querySelectorAll('.theme-toggle');
   const setTheme = theme => {
-    const gray = theme === 'gray';
-    document.documentElement.dataset.theme = gray ? 'gray' : 'dark';
+    const isDark = theme === 'dark';
+    document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
     themeButtons.forEach(button => {
-      button.setAttribute('aria-pressed', String(gray));
-      button.setAttribute('aria-label', gray ? 'Switch to black background' : 'Switch to charcoal background');
+      button.setAttribute('aria-pressed', String(isDark));
+      button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
       const label = button.querySelector('.theme-label');
-      if (label) label.textContent = gray ? 'Black mode' : 'Gray mode';
+      const icon = button.querySelector('.theme-icon');
+      if (label) label.textContent = isDark ? 'Light mode' : 'Dark mode';
+      if (icon) icon.textContent = isDark ? '☀' : '☾';
     });
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.content = isDark ? '#0b0c10' : '#fffdf8';
   };
-  let savedTheme = 'dark';
-  try { savedTheme = localStorage.getItem('mastera-theme') || 'dark'; } catch (_) { /* Storage may be unavailable in private browsing. */ }
+  let savedTheme = 'light';
+  try { savedTheme = localStorage.getItem('mastera-theme') || 'light'; } catch (_) { /* Storage may be unavailable in private browsing. */ }
+  if (savedTheme !== 'dark') savedTheme = 'light';
   setTheme(savedTheme);
   themeButtons.forEach(button => button.addEventListener('click', () => {
-    const nextTheme = document.documentElement.dataset.theme === 'gray' ? 'dark' : 'gray';
+    const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     setTheme(nextTheme);
     try { localStorage.setItem('mastera-theme', nextTheme); } catch (_) { /* The toggle still works for this visit. */ }
   }));
-
   // Accessible mobile navigation.
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.main-nav');
@@ -85,5 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', event => { if (event.key === 'Escape' && !lightbox.hidden) close(); });
   }
 });
+
 
 

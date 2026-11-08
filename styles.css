@@ -72,3 +72,41 @@ html,body{max-width:100%;overflow-x:clip}
 .service-card>a b,.text-link b,.process-steps article>span,.approach-cards span,.package-grid li:before,.faq-list summary span,.contact-detail>span,.contact-form h2 span{color:var(--blue)}
 .lightbox{background:#080d19ed}
 @media(max-width:1100px){.hero{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(46px,5vw,62px)}.hero-art{min-height:360px}.main-nav{gap:17px}}
+
+/* Theme controls and palette roles: 60% base, 30% supporting panels, 10% accent. */
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:0 11px;border:1px solid var(--line);border-radius:22px;background:var(--paper);color:var(--ink);font-size:9px;font-weight:800;white-space:nowrap;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .2s}
+.theme-toggle:hover{transform:translateY(-1px);border-color:var(--blue)}
+.theme-icon{color:var(--blue);font-size:14px;line-height:1}
+body,.site-header,.client-strip,.service-card,.package-grid article,.contact-form,.process-band,.social-category,.closing-cta,.site-footer{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
+:root{color-scheme:light;--bg:#fffdf8;--paper:#fff;--ink:#171816;--muted:#71736e;--line:#e8e7df;--yellow:#f4c62f;--yellow-soft:#fff1b3;--blue:#3c66d9;--blue-soft:#eaf0ff;--green:#3c66d9;--dark:#244886;--band-text:#fff}
+.site-footer{background:var(--dark);color:var(--band-text)}
+.footer-main>p,.footer-links,.footer-mail,.footer-bottom{color:var(--band-text)}
+.footer-bottom{border-color:color-mix(in srgb,var(--band-text) 28%,transparent)}
+.button-dark{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0b0c10;--paper:#15171e;--ink:#f5f5f1;--muted:#a7aab5;--line:#ffffff24;--yellow:#f4c62f;--yellow-soft:#ffe17a;--blue:#6f91ff;--blue-soft:#1a2a50;--green:#6f91ff;--dark:#f4c62f;--band-text:#171810}
+html[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+html[data-theme="dark"] .site-header{background:color-mix(in srgb,var(--paper) 94%,transparent);border-color:var(--line)}
+html[data-theme="dark"] .main-nav>a:not(.nav-cta){color:var(--muted)}
+html[data-theme="dark"] .main-nav>a:hover,html[data-theme="dark"] .main-nav>a.active{color:var(--yellow)}
+html[data-theme="dark"] .theme-toggle{background:var(--paper);color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .client-strip,html[data-theme="dark"] .service-card,html[data-theme="dark"] .package-grid article,html[data-theme="dark"] .contact-form,html[data-theme="dark"] .industry-list span,html[data-theme="dark"] .button-light{background:var(--paper);color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .client-track{color:var(--muted)}
+html[data-theme="dark"] .hero-lede,html[data-theme="dark"] .hero-footnote,html[data-theme="dark"] .contact-lede,html[data-theme="dark"] .page-hero-copy>p:not(.eyebrow){color:var(--muted)}
+html[data-theme="dark"] .process-band,html[data-theme="dark"] .social-category{background:#141720;color:var(--ink)}
+html[data-theme="dark"] .service-card-highlight{background:#202a43;border-color:#334b81}
+html[data-theme="dark"] .package-featured,html[data-theme="dark"] .package-grid .package-featured{background:#2a2514;border-color:#8b741e}
+html[data-theme="dark"] .closing-cta{background:#1c2b50;color:var(--ink)}
+html[data-theme="dark"] .closing-cta>div:first-child>p:not(.eyebrow){color:#c5cbe0}
+html[data-theme="dark"] .impact-band,html[data-theme="dark"] .about-statement,html[data-theme="dark"] .about-process,html[data-theme="dark"] .site-footer{background:var(--dark);color:var(--band-text)}
+html[data-theme="dark"] .impact-band h2 em,html[data-theme="dark"] .about-process h2 em,html[data-theme="dark"] .statement-inner em{color:var(--blue)}
+html[data-theme="dark"] .impact-band .eyebrow,html[data-theme="dark"] .impact-facts b,html[data-theme="dark"] .impact-map,html[data-theme="dark"] .about-process li>span{color:var(--blue)}
+html[data-theme="dark"] .impact-band p:not(.eyebrow),html[data-theme="dark"] .impact-facts span,html[data-theme="dark"] .about-process-inner>div>p:not(.eyebrow),html[data-theme="dark"] .about-process li small{color:#343423}
+html[data-theme="dark"] .impact-facts article,html[data-theme="dark"] .about-process li{border-color:#17181040}
+html[data-theme="dark"] .brand-footer small,html[data-theme="dark"] .footer-main>p,html[data-theme="dark"] .footer-links,html[data-theme="dark"] .footer-mail,html[data-theme="dark"] .footer-bottom{color:var(--band-text)}
+html[data-theme="dark"] .footer-bottom{border-color:#17181040}
+html[data-theme="dark"] h1 em,html[data-theme="dark"] h2 em{color:var(--yellow)}
+html[data-theme="dark"] .button-dark{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] .main-nav.open{background:var(--paper);border-color:var(--line)}
+html[data-theme="dark"] .contact-form input,html[data-theme="dark"] .contact-form select,html[data-theme="dark"] .contact-form textarea{background:#101218;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .contact-form label{color:var(--ink)}
+html[data-theme="dark"] .faq-list summary{color:var(--ink)}
