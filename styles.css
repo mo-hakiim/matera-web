@@ -71,7 +71,7 @@ html,body{max-width:100%;overflow-x:clip}
 .service-card:hover .service-icon{background:#dce6ff}
 .service-card>a b,.text-link b,.process-steps article>span,.approach-cards span,.package-grid li:before,.faq-list summary span,.contact-detail>span,.contact-form h2 span{color:var(--blue)}
 .lightbox{background:#080d19ed}
-@media(max-width:1100px){.hero{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(46px,5vw,62px)}.hero-art{min-height:360px}.main-nav{gap:17px}}
+@media(min-width:621px) and (max-width:1100px){.hero{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(46px,5vw,62px)}.hero-art{min-height:360px}.main-nav{gap:17px}}
 
 /* Theme controls and palette roles: 60% base, 30% supporting panels, 10% accent. */
 .theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:0 11px;border:1px solid var(--line);border-radius:22px;background:var(--paper);color:var(--ink);font-size:9px;font-weight:800;white-space:nowrap;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .2s}
@@ -110,3 +110,4 @@ html[data-theme="dark"] .main-nav.open{background:var(--paper);border-color:var(
 html[data-theme="dark"] .contact-form input,html[data-theme="dark"] .contact-form select,html[data-theme="dark"] .contact-form textarea{background:#101218;color:var(--ink);border-color:var(--line)}
 html[data-theme="dark"] .contact-form label{color:var(--ink)}
 html[data-theme="dark"] .faq-list summary{color:var(--ink)}
+
