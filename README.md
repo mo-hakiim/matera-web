@@ -2,6 +2,8 @@
 
 A lightweight static marketing site built with plain HTML, CSS, and JavaScript. No build step or package installation is required.
 
+The home page presents brand identity and social media campaign work in separate galleries. The Our Work page groups the same projects into those two categories. A persistent dark/charcoal theme switch, animated client marquee, floating visual elements, and scroll-in section transitions are included.
+
 ## Preview locally
 
 Open `index.html` in a browser, or serve this folder with any static web server.
