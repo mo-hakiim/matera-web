@@ -72,7 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     projectCards.forEach(card => card.addEventListener('click', () => {
       previousFocus = card;
-      preview.src = card.dataset.image;
+      const cardImage = card.querySelector('img');
+      preview.src = cardImage?.currentSrc || new URL(card.dataset.image, document.baseURI).href;
       preview.alt = `${card.dataset.title} project preview`;
       caption.textContent = `${card.dataset.title} — ${card.dataset.type}`;
       lightbox.hidden = false;
@@ -84,3 +85,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', event => { if (event.key === 'Escape' && !lightbox.hidden) close(); });
   }
 });
+
+

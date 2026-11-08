@@ -1,8 +1,8 @@
 # Mastera Agency Website
 
-A lightweight static marketing site built with plain HTML, CSS, and JavaScript. No build step or package installation is required.
+A lightweight static marketing site for Mastera, an independent creative and marketing agency based in Hargeisa, Somaliland. Built with plain HTML, CSS, and JavaScript; no build step or package installation is required.
 
-The home page presents brand identity and social media campaign work in separate galleries. The Our Work page groups the same projects into those two categories. A persistent dark/charcoal theme switch, animated client marquee, floating visual elements, and scroll-in section transitions are included.
+The home page introduces Mastera’s services, selected identity and campaign work, monthly content packages, process, and contact options. Separate pages cover About, Our Work, and Contact. The site adapts to mobile screens and respects reduced-motion preferences.
 
 ## Preview locally
 
@@ -15,6 +15,4 @@ Open `index.html` in a browser, or serve this folder with any static web server.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
 4. Select the `main` branch and `/ (root)` folder, then save.
 
-The site entry point is `index.html`. Pages for Home, About, Our Work, and Contact are linked with relative paths so they work from a project subpath.
-
-The contact form uses a `mailto:` action and opens the visitor's email application. It does not submit to a server.
+The site entry point is `index.html`. The contact form uses a `mailto:` action and opens the visitor's email application; it does not submit to a server.
