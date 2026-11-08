@@ -59,3 +59,16 @@
 .brand-project[data-brand="heersare"] .portfolio-card img{object-fit:cover}
 .brand-project-grid .portfolio-card:focus-visible{outline:3px solid #d9ad20;outline-offset:3px}
 @media(max-width:620px){.brand-project-list{gap:30px}.brand-project{padding-top:26px}.brand-project-heading{display:block;margin-bottom:12px}.brand-project-heading p{margin-top:3px}.brand-project-grid{grid-template-columns:1fr}.brand-project-grid .portfolio-card{aspect-ratio:1.65}.brand-project[data-brand="heersare"] .portfolio-card{aspect-ratio:4/5}}
+
+/* Blue as the supporting brand color, with yellow kept as the lead accent. */
+:root{--blue:#3c66d9;--blue-soft:#eaf0ff;--green:#3c66d9;--dark:#152542}
+html,body{max-width:100%;overflow-x:clip}
+.hero{grid-template-columns:1.04fr .96fr}
+.hero-copy{min-width:0}
+.hero h1{max-width:100%;font-size:clamp(46px,4.8vw,66px)}
+.hero-art{min-width:0;overflow:clip}
+.service-icon{background:var(--blue-soft);color:var(--blue)}
+.service-card:hover .service-icon{background:#dce6ff}
+.service-card>a b,.text-link b,.process-steps article>span,.approach-cards span,.package-grid li:before,.faq-list summary span,.contact-detail>span,.contact-form h2 span{color:var(--blue)}
+.lightbox{background:#080d19ed}
+@media(max-width:1100px){.hero{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(46px,5vw,62px)}.hero-art{min-height:360px}.main-nav{gap:17px}}
