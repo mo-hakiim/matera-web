@@ -182,3 +182,32 @@ html[data-theme="dark"] .package-grid .package-silver>p,html[data-theme="dark"] 
 @media(max-width:620px){.social-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.social-home .social-card span{padding:11px;font-size:11px}.social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-grid-visual .service-card p,.package-grid li,.package-grid article>p,.package-free p,.process-steps article p,.approach-cards b,.industry-list span,.faq-list details p{font-size:13px}.package-grid article>a,.button,.nav-cta{font-size:12px}}
 @media(max-width:480px){.social-gallery,.social-grid{grid-template-columns:1fr}.social-home .social-card span{font-size:12px}}
 .client-group{width:max-content;min-width:max-content}
+
+/* Clear space for the partner label and enlarge supporting copy across screens. */
+.client-strip{display:grid;grid-template-columns:minmax(145px,170px) minmax(0,1fr);align-items:center;gap:22px;overflow:hidden}
+.client-label{justify-self:end;text-align:right;white-space:nowrap;font-size:13px}
+.client-track{width:100%;min-width:0;overflow:hidden}
+.client-group{width:max-content;min-width:max-content;gap:clamp(22px,2.5vw,36px);padding-inline:24px}
+.client-group .client-logo{width:clamp(105px,9vw,132px);height:62px}
+body{font-size:16px;line-height:1.65}
+.brand small{font-size:8px}
+.eyebrow{font-size:12px}
+.main-nav>a:not(.nav-cta),.nav-cta,.button,.theme-toggle,.package-grid article>a,.service-card>a{font-size:14px}
+.hero-lede,.section-heading>p,.category-heading>p,.page-hero-copy>p:not(.eyebrow),.contact-lede,.contact-copy>p:not(.eyebrow){font-size:17px;line-height:1.7}
+.hero-footnote,.brand-project-heading p,.about-process li small{font-size:15px}
+.service-card h3{font-size:20px}
+.service-grid-visual .service-card p,.process-steps article p,.approach-cards b,.about-process-inner>div>p:not(.eyebrow),.industry-list span,.package-grid article>p,.package-grid li,.package-free p,.package-note,.faq-list summary,.faq-list details p{font-size:16px;line-height:1.65}
+.service-grid-visual .service-card>a{font-size:14px}
+.package-grid article>small{font-size:12px}
+.package-grid h3{font-size:24px}
+.package-grid li{line-height:1.55}
+.package-free>small{font-size:13px}
+.package-free .package-extra-list{display:grid;gap:9px;margin:12px 0 0;padding:0;list-style:none}
+.package-free .package-extra-list li{font-size:16px;line-height:1.5}
+.package-note,.footer-main>p,.footer-links,.footer-mail,.footer-bottom{font-size:14px}
+.social-home .social-card span{font-size:15px}
+.social-grid .portfolio-info b{font-size:15px}
+.social-grid .portfolio-info small{font-size:14px;line-height:1.45}
+.approach-cards b,.industry-list span,.contact-form label{font-size:15px}
+@media(max-width:850px){.client-strip{grid-template-columns:minmax(130px,150px) minmax(0,1fr);gap:16px}.client-group .client-logo{width:112px}}
+@media(max-width:620px){.client-strip{display:block;padding:15px 16px}.client-label{justify-self:center;margin-bottom:12px;text-align:center;font-size:13px}.client-track{width:100%;overflow:hidden}.client-group{width:max-content;min-width:max-content;gap:24px;padding-inline:14px}.client-group .client-logo{width:112px;height:58px}.main-nav>a:not(.nav-cta){font-size:15px}.nav-cta,.button,.theme-toggle,.package-grid article>a{font-size:14px}.hero-lede,.page-hero-copy>p:not(.eyebrow){font-size:16px}.section-heading>p,.category-heading>p,.contact-lede{font-size:16px}.hero-footnote,.service-grid-visual .service-card p,.package-grid article>p,.package-grid li,.package-free .package-extra-list li,.process-steps article p,.approach-cards b,.industry-list span,.faq-list details p{font-size:15px}.service-card h3{font-size:19px}.service-grid-visual .service-card>a{font-size:14px}.package-grid article>small{font-size:12px}.package-free>small{font-size:13px}.social-home .social-card span{font-size:14px}.social-grid .portfolio-info b{font-size:15px}.social-grid .portfolio-info small{font-size:14px}.footer-main>p,.footer-links,.footer-mail,.footer-bottom{font-size:14px}}
