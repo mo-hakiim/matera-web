@@ -5,3 +5,6 @@
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Source artwork supplied for local site updates; publish optimized derivatives only.
+/assets/4x/
