@@ -1,19 +1,29 @@
-# Mastera Agency Website
+# Welcome to your Lovable project
 
-A lightweight static marketing site for Mastera, an independent creative and marketing agency based in Hargeisa, Somaliland. Built with plain HTML, CSS, and JavaScript; no build step or package installation is required.
+This project was built with [Lovable](https://lovable.dev).
 
-The home page introduces Mastera’s services, selected identity and campaign work, monthly content packages, process, and contact options. Separate pages cover About, Our Work, and Contact. The site adapts to mobile screens, respects reduced-motion preferences, and includes a persistent light/dark theme toggle. Light mode pairs white with blue and yellow accents; dark mode pairs black with yellow and blue accents.
+## Build with Lovable
 
-## Preview locally
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
 
-Open `index.html` in a browser, or serve this folder with any static web server.
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
 
-## Publish with GitHub Pages
+## Development
 
-1. Push this repository to GitHub.
-2. Open the repository's **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder, then save.
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-The site entry point is `index.html`. The contact form uses a `mailto:` action and opens the visitor's email application; it does not submit to a server.
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
+```
 
+## Built with
+
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS
