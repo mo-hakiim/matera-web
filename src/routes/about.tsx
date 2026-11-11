@@ -5,6 +5,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { ApproachSteps } from "@/components/site/ApproachSteps";
 import { CtaBand } from "@/components/site/CtaBand";
+import { assetUrl } from "@/lib/site-path";
 import { TiltCard } from "@/components/site/TiltCard";
 
 export const Route = createFileRoute("/about")({
@@ -49,7 +50,7 @@ function About() {
           <Reveal>
             <div className="relative overflow-hidden rounded-[2rem] glass p-10 md:p-14">
               <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-primary/40 blur-3xl" />
-              <img src="/assets/4x/mastera-logo-light.webp" alt="Mastera — master your market" width={900} height={252} className="relative w-full max-w-md" />
+              <img src={assetUrl("/assets/4x/mastera-logo-light.webp")} alt="Mastera — master your market" width={900} height={252} className="relative w-full max-w-md" />
             </div>
           </Reveal>
           <Reveal delay={120} className="space-y-6 text-lg leading-relaxed text-muted-foreground">

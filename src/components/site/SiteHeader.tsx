@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { assetUrl } from "@/lib/site-path";
 
 const nav = [
   { to: "/about", label: "About" },
@@ -33,7 +34,7 @@ export function SiteHeader() {
         )}
       >
         <Link to="/" className="shrink-0" aria-label="Mastera home" onClick={() => setOpen(false)}>
-          <img src="/assets/4x/mastera-logo-light.webp" alt="Mastera — master your market" className="h-9 w-auto md:h-10" width={900} height={252} />
+          <img src={assetUrl("/assets/4x/mastera-logo-light.webp")} alt="Mastera — master your market" className="h-9 w-auto md:h-10" width={900} height={252} />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

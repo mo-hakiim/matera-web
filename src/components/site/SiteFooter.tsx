@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube, Globe } from "lucide-react";
 import { contact } from "@/lib/content";
+import { assetUrl } from "@/lib/site-path";
 
 const socials = [
   { label: "Facebook", icon: Facebook, href: "https://facebook.com" },
@@ -90,7 +91,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-border py-8 md:flex-row">
-          <img src="/assets/4x/mastera-logo-light.webp" alt="Mastera" className="h-10 w-auto" width={900} height={252} loading="lazy" />
+          <img src={assetUrl("/assets/4x/mastera-logo-light.webp")} alt="Mastera" className="h-10 w-auto" width={900} height={252} loading="lazy" />
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Mastera Marketing & Creative Agency. All rights reserved.</p>
         </div>
       </div>

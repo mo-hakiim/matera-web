@@ -9,10 +9,41 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+const isGitHubPagesBuild = process.env.GITHUB_PAGES_BUILD === "true";
+
+const githubPagesRoutes = [
+  "/",
+  "/about",
+  "/services",
+  "/portfolio",
+  "/brands",
+  "/brands/heersare",
+  "/brands/carwo",
+  "/brands/markiz",
+  "/pricing",
+  "/contact",
+];
+
 export default defineConfig({
+  vite: {
+    // Keep Cloudflare on the domain root; GitHub Pages hosts this repository below /matera-web/.
+    base: isGitHubPagesBuild ? "/matera-web/" : "/",
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    ...(isGitHubPagesBuild && {
+      prerender: {
+        enabled: true,
+        autoStaticPathsDiscovery: true,
+        crawlLinks: true,
+        failOnError: true,
+      },
+      pages: githubPagesRoutes.map((path) => ({
+        path,
+        prerender: { enabled: true },
+      })),
+    }),
   },
 });
