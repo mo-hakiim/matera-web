@@ -9,8 +9,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Mastera design system — "Rich Black" stage lit by Deep Blue glow, Vibrant Orange
- * energy and the logo's amber underline. All colors are oklch tokens.
+ * Mastera design system — "Rich Black" stage lit by Deep Blue glow and the logo's
+ * yellow accent. All colors are oklch tokens.
  */
 
 @theme inline {
@@ -104,8 +104,8 @@
   --muted: oklch(0.22 0.02 265);
   --muted-foreground: oklch(0.72 0.02 260);
 
-  /* Vibrant orange + logo amber (#FFC000) */
-  --accent: oklch(0.72 0.19 50);
+  /* Logo yellow (#FFC000) */
+  --accent: oklch(0.842 0.173 84.6);
   --accent-foreground: oklch(0.16 0.02 265);
   --gold: oklch(0.842 0.173 84.6);
   --gold-foreground: oklch(0.18 0.02 265);
@@ -127,7 +127,7 @@
 
   --gradient-hero:
     radial-gradient(60% 60% at 15% 20%, oklch(0.5 0.19 260 / 0.45), transparent 70%),
-    radial-gradient(45% 50% at 85% 30%, oklch(0.72 0.19 50 / 0.28), transparent 70%),
+    radial-gradient(45% 50% at 85% 30%, oklch(0.842 0.173 84.6 / 0.28), transparent 70%),
     radial-gradient(50% 60% at 60% 100%, oklch(0.42 0.17 262 / 0.4), transparent 70%);
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));
   --gradient-energy: linear-gradient(120deg, var(--primary-glow), var(--accent) 60%, var(--gold));
@@ -138,11 +138,11 @@
     oklch(1 0 0 / 0.01)
   );
   --shadow-glow: 0 0 0 1px oklch(0.68 0.16 248 / 0.25), 0 20px 60px -15px oklch(0.5 0.19 260 / 0.6);
-  --shadow-glow-accent: 0 0 0 1px oklch(0.72 0.19 50 / 0.3), 0 20px 60px -15px oklch(0.72 0.19 50 / 0.55);
+  --shadow-glow-accent: 0 0 0 1px oklch(0.842 0.173 84.6 / 0.3), 0 20px 60px -15px oklch(0.842 0.173 84.6 / 0.55);
   --shadow-elevated: 0 30px 80px -20px oklch(0 0 0 / 0.7);
 
   --chart-1: oklch(0.5 0.19 260);
-  --chart-2: oklch(0.72 0.19 50);
+  --chart-2: oklch(0.842 0.173 84.6);
   --chart-3: oklch(0.842 0.173 84.6);
   --chart-4: oklch(0.68 0.16 248);
   --chart-5: oklch(0.72 0.02 260);
@@ -198,7 +198,7 @@
     letter-spacing: -0.02em;
   }
   ::selection {
-    background: oklch(0.72 0.19 50 / 0.4);
+    background: oklch(0.842 0.173 84.6 / 0.4);
   }
 }
 

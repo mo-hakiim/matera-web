@@ -6,6 +6,7 @@ export const contact = {
   web: "Mastera.com",
   phones: ["063-8775808", "065-8775808"],
 };
+export const primaryWhatsAppUrl = "https://wa.me/252638775808";
 
 export const approach = [
   { title: "Discover", text: "Understand the business, customers, objectives, and market." },
@@ -126,7 +127,7 @@ export const packages = [
     contentPieces: 10,
     features: [...corePackageFeatures],
     extras: [] as string[],
-    bonuses: ["Holiday posters", "Juma posters"],
+    bonuses: ["Holiday posters", "Juma posters", "Facebook cover"],
     featured: false,
   },
   {
@@ -135,8 +136,8 @@ export const packages = [
     name: "Brand Growth",
     contentPieces: 20,
     features: [...corePackageFeatures],
-    extras: ["Staff training (frequency)", "Campaign management"],
-    bonuses: ["Holiday posters", "Juma posters"],
+    extras: ["Staff training", "Campaign management"],
+    bonuses: ["Holiday posters", "Juma posters", "Facebook cover"],
     featured: true,
   },
   {
@@ -146,20 +147,20 @@ export const packages = [
     contentPieces: 30,
     features: [...corePackageFeatures],
     extras: [
-      "Staff training (frequency)",
+      "Staff training",
       "Full campaign management",
-      "Payment for advertising costs (coordination)",
-      "Website coordination & management",
+      "Payment for advertising costs",
+      "Website management",
     ],
-    bonuses: ["Holiday posters", "Juma posters"],
+    bonuses: ["Holiday posters", "Juma posters", "Facebook cover"],
     featured: false,
   },
 ];
 
-export const packageExclusions = [
-  "Filming company events",
-  "Any designs other than social media posters",
-  "Brand structure modifying",
+export const extendedServices = [
+  "Branding",
+  "Event Management",
+  "Web design and development",
 ];
 
 /* ---------- Portfolio (strictly from the portfolio file) ---------- */
@@ -190,7 +191,7 @@ export const posts: Post[] = [
   post("10", "Kuwaity Dental Care Center", "Qoys Faraxsan — family smiles"),
   post("15", "A-Z Barber Shop", "Modern cuts campaign"),
   post("11", "Daryeel Wellness", "Fenugreek herbal supplement"),
-  post("09", "Shirkada Towba", "Abaal-Marinta award"),
+  post("09", "Astaan Construction Company", "Hambalyo Macmiil"),
   post("13", "Kuwaity Dental Care Center", "Ilmo Faraxsan — kids' dental care"),
 ];
 

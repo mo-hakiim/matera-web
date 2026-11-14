@@ -57,7 +57,7 @@ function Pricing() {
           align="center"
           eyebrow="What changes between plans"
           title="Content volume, training, campaigns, ad spend & web."
-          intro="Every plan shares the core features. Higher tiers add staff training, campaign management, advertising cost coordination and website management."
+          intro="Every plan shares the core features. Higher tiers add staff training, campaign management, advertising costs and website management."
         />
       </section>
 

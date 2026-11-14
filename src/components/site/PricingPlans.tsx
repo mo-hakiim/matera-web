@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Check, Gift, Plus, X } from "lucide-react";
-import { packageExclusions, packages } from "@/lib/content";
+import { Check, Gift, Plus } from "lucide-react";
+import { extendedServices, packages } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./Reveal";
@@ -76,13 +76,13 @@ export function PricingPlans({ showExclusions = true }: { showExclusions?: boole
       {showExclusions && (
         <Reveal className="mt-14 rounded-3xl border border-dashed border-border p-8">
           <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-            Package exclusions
+            Extended services
           </h3>
           <ul className="mt-5 grid gap-4 md:grid-cols-3">
-            {packageExclusions.map((e) => (
+            {extendedServices.map((e) => (
               <li key={e} className="flex items-center gap-3 rounded-2xl bg-surface p-4 text-sm">
-                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-destructive/15 text-destructive">
-                  <X className="h-4 w-4" />
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
+                  <Plus className="h-4 w-4" />
                 </span>
                 {e}
               </li>

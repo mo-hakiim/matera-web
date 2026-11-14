@@ -8,7 +8,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { contact, packages } from "@/lib/content";
+import { contact, packages, primaryWhatsAppUrl } from "@/lib/content";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -90,7 +90,7 @@ function Contact() {
                   {contact.phones.map((p, i) => (
                     <span key={p}>
                       {i > 0 && " | "}
-                      <a href={`tel:${p.replace(/-/g, "")}`} className="hover:text-accent">{p}</a>
+                      <a href={i === 0 ? primaryWhatsAppUrl : `tel:${p.replace(/-/g, "")}`} className="hover:text-accent">{p}</a>
                     </span>
                   ))}
                 </p>

@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube, Globe } from "lucide-react";
-import { contact } from "@/lib/content";
+import { contact, primaryWhatsAppUrl } from "@/lib/content";
 import { assetUrl } from "@/lib/site-path";
 
 const socials = [
@@ -81,7 +81,7 @@ export function SiteFooter() {
                   {contact.phones.map((p, i) => (
                     <span key={p}>
                       {i > 0 && " | "}
-                      <a href={`tel:${p.replace(/-/g, "")}`} className="hover:text-accent">{p}</a>
+                      <a href={i === 0 ? primaryWhatsAppUrl : `tel:${p.replace(/-/g, "")}`} className="hover:text-accent">{p}</a>
                     </span>
                   ))}
                 </span>

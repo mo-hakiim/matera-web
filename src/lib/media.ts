@@ -15,7 +15,7 @@ export const brandPages = {
 
 /** Social posts keyed by their page number in the portfolio source (9–17). */
 export const postUrls: Record<string, string> = {
-  "09": assetUrl("/assets/work/social-towba-graduation.jpg"),
+  "09": assetUrl("/assets/work/social-towba-congratulations.jpg"),
   "10": assetUrl("/assets/work/social-kuwait-dental-care.jpg"),
   "11": assetUrl("/assets/work/daryeel-post.jpg"),
   "12": assetUrl("/assets/work/amal-post.jpg"),
