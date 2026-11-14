@@ -27,7 +27,7 @@ const githubPagesRoutes = [
 export default defineConfig({
   vite: {
     // Keep Cloudflare on the domain root; GitHub Pages hosts this repository below /matera-web/.
-    base: isGitHubPagesBuild ? "/matera-web/" : "/",
+    base: "/",
   },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
